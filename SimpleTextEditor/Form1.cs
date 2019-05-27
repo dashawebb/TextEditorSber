@@ -51,7 +51,6 @@ namespace SimpleTextEditor
                     }
                     sr.Close();
                 }
-
             }
         }
 
@@ -68,18 +67,32 @@ namespace SimpleTextEditor
             richTextBox1.Text = "";
             foreach (string _s in RtbFullText)
             {
-                if (_s.Contains(textBox1.Text))
-                    richTextBox1.Text += _s + "\n";
+                if ((_s.Contains(textBox1.Text) && textBox1.Text != "") || (_s.Contains(textBox2.Text) && textBox2.Text != "") || (_s.Contains(textBox3.Text) && textBox3.Text != "") || (_s.Contains(textBox4.Text) && textBox4.Text != ""))
+                {
+                    if (!(comboBox1.SelectedIndex == 1 && !_s.Contains(textBox1.Text)))
+                    {
+                        if (!(comboBox2.SelectedIndex == 1 && !_s.Contains(textBox2.Text)))
+                        {
+                            if (!(comboBox3.SelectedIndex == 1 && !_s.Contains(textBox3.Text)))
+                            {
+                                if (!(comboBox4.SelectedIndex == 1 && !_s.Contains(textBox4.Text)))
+                                {
+                                    richTextBox1.Text += _s + "\n";
+                                }
+                            }
+                        }
+                    }
+                }
             }
-
         }
 
         private void ClearButton(object sender, EventArgs e)
         {
             richTextBox1.Clear();
-            richTextBox1.AppendText("\r\n" + RtbFullText);
-
-            richTextBox1.Text += RtbFullText;
+            textBox1.Text = String.Empty;
+            textBox2.Text = String.Empty;
+            textBox3.Text = String.Empty;
+            textBox4.Text = String.Empty;
         }
     }
 }

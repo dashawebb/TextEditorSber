@@ -40,11 +40,15 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -75,7 +79,7 @@
             // 
             this.button1.AutoEllipsis = true;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(614, 37);
+            this.button1.Location = new System.Drawing.Point(654, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 4;
@@ -90,7 +94,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "ИЛИ",
             "И"});
-            this.comboBox1.Location = new System.Drawing.Point(118, 37);
+            this.comboBox1.Location = new System.Drawing.Point(12, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(46, 21);
             this.comboBox1.TabIndex = 7;
@@ -98,14 +102,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 37);
+            this.textBox1.Location = new System.Drawing.Point(64, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 8;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(170, 37);
+            this.textBox2.Location = new System.Drawing.Point(222, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 10;
@@ -117,7 +121,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "ИЛИ",
             "И"});
-            this.comboBox2.Location = new System.Drawing.Point(276, 37);
+            this.comboBox2.Location = new System.Drawing.Point(170, 37);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(46, 21);
             this.comboBox2.TabIndex = 9;
@@ -126,7 +130,7 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(328, 37);
+            this.textBox3.Location = new System.Drawing.Point(380, 37);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 12;
@@ -138,7 +142,7 @@
             this.comboBox3.Items.AddRange(new object[] {
             "ИЛИ",
             "И"});
-            this.comboBox3.Location = new System.Drawing.Point(434, 37);
+            this.comboBox3.Location = new System.Drawing.Point(328, 37);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(46, 21);
             this.comboBox3.TabIndex = 11;
@@ -147,7 +151,7 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(486, 37);
+            this.textBox4.Location = new System.Drawing.Point(538, 37);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 14;
@@ -156,19 +160,33 @@
             // 
             this.button2.AutoEllipsis = true;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(695, 37);
+            this.button2.Location = new System.Drawing.Point(735, 37);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.Size = new System.Drawing.Size(50, 21);
             this.button2.TabIndex = 15;
             this.button2.Text = "Сброс";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.ClearButton);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "ИЛИ",
+            "И"});
+            this.comboBox4.Location = new System.Drawing.Point(486, 37);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(46, 21);
+            this.comboBox4.TabIndex = 16;
+            this.comboBox4.Text = "ИЛИ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -180,6 +198,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.menuStrip2);
+            this.MinimumSize = new System.Drawing.Size(810, 330);
             this.Name = "Form1";
             this.Text = "#powered_by_sber";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -203,6 +222,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
 
