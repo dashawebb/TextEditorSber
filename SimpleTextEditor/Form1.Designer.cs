@@ -69,7 +69,7 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
             this.toolStripMenuItem1.Text = "Файл";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1_Click_1);
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.OpenFile);
             // 
             // button1
             // 
@@ -81,7 +81,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Применить";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.FilterButton);
             // 
             // comboBox1
             // 
@@ -162,7 +162,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Сброс";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.ClearButton);
             // 
             // Form1
             // 
